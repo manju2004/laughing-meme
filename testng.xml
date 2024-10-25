@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+ <!--  <test name="test1" >
+   		<groups>
+   			<run>
+   				<include name = "regression1"></include> -->
+   				<!--<exclude name = "regression1"></exclude> -->
+	   <!--  </run>
+   		</groups>
+  <classes> 
+          <class name="TestNgPgm.TestNgGroups" />
+        
+       </classes> 
+   </test>
+   
+   -->
+   
+   <test name="ChromeTest">
+
+<parameter name="browser" value="Chrome" />
+
+<classes>
+
+<class name="CrossBrowserTesting">
+
+</class>
+
+</classes>
+
+</test>
+
+<test name="FirefoxTest">
+
+<parameter name="browser" value="Firefox" />
+
+<classes>
+<class name="CrossBrowserTesting">
+
+</class>
+
+</classes>
+
+</test>
+
+<test name="EdgeTest">
+
+<parameter name="browser" value="Edge" />
+
+<classes>
+
+<class name="CrossBrowserTesting">
+
+</class>
+
+</classes>
+
+</test>
+
+</suite> <!-- Suite -->
+

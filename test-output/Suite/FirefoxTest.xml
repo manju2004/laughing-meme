@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-732TUPH" failures="0" tests="1" name="CrossBrowserTesting" time="0.28" errors="0" timestamp="23 Oct 2024 12:25:37 GMT">
+  <testcase classname="CrossBrowserTesting" name="@BeforeClass setup" time="0.0">
+    <failure type="org.openqa.selenium.SessionNotCreatedException" message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &amp;apos;DESKTOP-732TUPH&amp;apos;, ip: &amp;apos;192.168.0.38&amp;apos;
+Build info: version: &amp;apos;4.17.0&amp;apos;, revision: &amp;apos;e52b1be057*&amp;apos;
+System info: os.name: &amp;apos;Windows 10&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;22.0.2&amp;apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]">
+      <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-732TUPH', ip: '192.168.0.38'
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:133)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
+	at CrossBrowserTesting.setup(CrossBrowserTesting.java:30)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "D:\SeleniumSoftwares\geckodriver.exe": CreateProcess error=216, This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+	at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:207)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	... 27 more
+Caused by: java.io.IOException: Cannot run program "D:\SeleniumSoftwares\geckodriver.exe": CreateProcess error=216, This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+	... 30 more
+Caused by: java.io.IOException: CreateProcess error=216, This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 32 more
+... Removed 15 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="CrossBrowserTesting" name="testParameterWithXML" time="0.001">
+    <skipped/>
+  </testcase>
+</testsuite>

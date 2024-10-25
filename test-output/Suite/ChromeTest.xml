@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-732TUPH" failures="0" tests="1" name="CrossBrowserTesting" time="3.851" errors="0" timestamp="23 Oct 2024 12:25:40 GMT">
+  <testcase classname="CrossBrowserTesting" name="testParameterWithXML" time="2.604"/>
+</testsuite>

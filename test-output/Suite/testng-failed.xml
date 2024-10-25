@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <parameter name="browser" value="Edge"/>
+  <test parallel="tests" name="FirefoxTest(failed)" preserve-order="false">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="CrossBrowserTesting">
+        <methods>
+          <include name="testParameterWithXML"/>
+          <include name="setup"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
